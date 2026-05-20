@@ -1,0 +1,44 @@
+# IDE files
+.idea/
+.vscode/
+*.iml
+
+# Java / Spring Boot
+backend/target/
+*.class
+*.jar
+*.war
+*.ear
+
+# Maven wrapper jar
+backend/.mvn/wrapper/maven-wrapper.jar
+
+# Logs
+*.log
+
+# Environment files
+.env
+.env.*
+backend/src/main/resources/application-local.properties
+frontend/.env.local
+frontend/.env.production
+
+# Upload folders
+backend/uploads/
+uploads/
+
+# Node / Next.js
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/dist/
+frontend/.turbo/
+
+# Package manager logs
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/pnpm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
