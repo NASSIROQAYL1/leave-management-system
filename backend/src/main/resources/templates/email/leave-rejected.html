@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Leave Request Rejected</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f4f7fb; margin: 0; padding: 24px; color: #1f2937; }
+        .card { max-width: 640px; margin: 0 auto; background: #ffffff; border-radius: 16px; padding: 32px; box-shadow: 0 12px 40px rgba(15,23,42,0.08); }
+        .badge { display: inline-block; background: #fef2f2; color: #b91c1c; padding: 6px 12px; border-radius: 999px; font-size: 12px; font-weight: 700; }
+        h1 { margin-top: 16px; font-size: 24px; }
+        p { line-height: 1.6; }
+        .details { background: #f8fafc; border-radius: 12px; padding: 16px; margin: 24px 0; }
+        .footer { color: #64748b; font-size: 12px; margin-top: 24px; }
+    </style>
+</head>
+<body>
+<div class="card">
+    <span class="badge">Rejected</span>
+    <h1>Your leave request was rejected</h1>
+    <p th:text="'Hello ' + ${recipientName} + ','">Hello,</p>
+    <p>Your leave request was not approved.</p>
+    <div class="details">
+        <p><strong>Leave type:</strong> <span th:text="${leaveType}">Annual Leave</span></p>
+        <p><strong>Dates:</strong> <span th:text="${startDate}">2026-01-01</span> to <span th:text="${endDate}">2026-01-02</span></p>
+        <p><strong>Working days:</strong> <span th:text="${totalDays}">2.0</span></p>
+        <p><strong>Comment:</strong> <span th:text="${comment}">Not approved.</span></p>
+    </div>
+    <div class="footer">This is an automated notification from the Leave Management System.</div>
+</div>
+</body>
+</html>

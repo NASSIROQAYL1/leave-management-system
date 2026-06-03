@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to the Leave Management System</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f4f7fb; margin: 0; padding: 24px; color: #1f2937; }
+        .card { max-width: 640px; margin: 0 auto; background: #ffffff; border-radius: 16px; padding: 32px; box-shadow: 0 12px 40px rgba(15,23,42,0.08); }
+        .badge { display: inline-block; background: #eff6ff; color: #1d4ed8; padding: 6px 12px; border-radius: 999px; font-size: 12px; font-weight: 700; }
+        h1 { margin-top: 16px; font-size: 24px; }
+        p { line-height: 1.6; }
+        .footer { color: #64748b; font-size: 12px; margin-top: 24px; }
+    </style>
+</head>
+<body>
+<div class="card">
+    <span class="badge">Welcome</span>
+    <h1>Welcome to the Leave Management System</h1>
+    <p th:text="'Hello ' + ${recipientName} + ','">Hello,</p>
+    <p>Your employee account has been created successfully.</p>
+    <p>You can now sign in with your company email address and begin managing leave requests and balances.</p>
+    <div class="footer">This is an automated notification from the Leave Management System.</div>
+</div>
+</body>
+</html>
