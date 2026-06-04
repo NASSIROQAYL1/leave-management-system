@@ -42,3 +42,9 @@ frontend/pnpm-debug.log*
 # OS files
 .DS_Store
 Thumbs.db
+
+# Vite / React build and cache
+frontend/.vite/
+frontend/*.tsbuildinfo
+frontend/tsconfig.app.tsbuildinfo
+frontend/tsconfig.node.tsbuildinfo
